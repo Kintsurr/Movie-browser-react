@@ -7,6 +7,7 @@ import MovieView from "./components/MovieView"
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ErrorPage from "./components/Error";
+import LookForMovie from "./components/LookForMovie";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/about" element={<AboutView />} />
         <Route path="/search" element={<SearchView keyword={searchText} searchResults={searchResults}/>}/>
         <Route path="/movies/:id" element={<MovieView/>} />
+        <Route path="/LookForMovie" element={<LookForMovie/>} />
       </Routes>
     </div>
   );

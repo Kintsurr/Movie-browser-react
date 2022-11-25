@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import { Link } from "react-router-dom";
-import default_poster from "./default_poster.jpg";
-import notFoundImg from "./search.png"
+import default_poster from "../images/default_poster.jpg";
+import notFoundImg from "../images/search.png"
 
 const MovieCard = ({ movie }) => {
   var posterUrl;
@@ -61,7 +61,9 @@ const SearchView = ({ keyword, searchResults, status}) => {
         <Hero text={title} />
         {resultHtml && (
           <div className="Container">
-            <div className="row">{resultHtml}</div>
+            <div className="row"> 
+              {resultHtml}  
+            </div>
           </div>
         )}
 

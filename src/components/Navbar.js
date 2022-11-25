@@ -39,14 +39,10 @@ const Navbar = ({searchText, setSearchText}) => {
             </li>
             <li className="nav-item dropdown">
               <Link
-                className="nav-link dropdown-toggle"
-                to="/"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                className="nav-link"
+                to="/LookForMovie"
               >
-                Dropdown
+              Looking for movie?
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>

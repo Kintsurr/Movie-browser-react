@@ -27,3 +27,25 @@
     margin-right: auto;
     margin-top: 5%;
 }
+/*________________________________________________________*/
+/*LookForMovie*/
+.LFMContainer{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+.genresContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    width: 80%;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.genreBox{
+    flex-basis: 10%;
+    padding: 5px;
+    margin: 1%;
+}
