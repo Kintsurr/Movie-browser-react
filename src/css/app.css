@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 .hero-container{
     position: relative;
     z-index: 100;
@@ -29,6 +33,10 @@
 }
 /*________________________________________________________*/
 /*LookForMovie*/
+.LFMBody{
+    background-image: url("../images/LFMBackground.jpg");
+}
+
 .LFMContainer{
     margin-left: 20%;
     margin-right: 20%;
@@ -38,14 +46,138 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-end;
-    width: 80%;
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
 }
 .genreBox{
-    flex-basis: 10%;
-    padding: 5px;
+    display: flex;
+    flex-basis: 15%;
     margin: 1%;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+.genreBoxInput{
+    display: none;
 }
+.genreBoxLabel{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    background-color: #5e6267;
+    color: white;
+    border-radius: 5px;
+    height: 150%;
+    font-weight: 600;
+    font-size: 110%;
+    border: 1px solid black;
+    transition: background-color 0.6s, color 1.5s,padding 1.2s;
+}
+
+.genreBoxInput:checked + .genreBoxLabel{
+    background-color: #212529;
+    color: white;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    
+  }
+  
+  .slider {
+    position: relative;
+    width: 400px;
+  }
+  
+  .slider__track,
+  .slider__range,
+  .slider__left-value,
+  .slider__right-value {
+    position: absolute;
+  }
+  
+  .slider__track,
+  .slider__range {
+    border-radius: 3px;
+    height: 5px;
+  }
+  
+  .slider__track {
+    background-color: #ced4da;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .slider__range {
+    background-color: #5e6267;
+    z-index: 2;
+  }
+  
+  .slider__left-value,
+  .slider__right-value {
+    color: #5e6267;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .slider__left-value {
+    left: 6px;
+  }
+  
+  .slider__right-value {
+    right: -4px;
+  }
+  
+  /* Removing the default appearance */
+  .thumb,
+  .thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 400px;
+    outline: none;
+  }
+  
+  .thumb--left {
+    z-index: 3;
+  }
+  
+  .thumb--right {
+    z-index: 4;
+  }
+  
+  /* For Chrome browsers */
+  .thumb::-webkit-slider-thumb {
+    background-color: #5e6267;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #ced4da;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+  }
+  
+  /* For Firefox browsers */
+  .thumb::-moz-range-thumb {
+    background-color: #5e6267;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #ced4da;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+  }

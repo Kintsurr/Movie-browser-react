@@ -1,0 +1,9 @@
+/* <div className="LFMContainer">
+            <label className="form-label">Enter your interests</label>
+            <input type="text" id="inputPassword5" className="form-control" aria-describedby="passwordHelpBlock" />
+            <div id="passwordHelpBlock" className="form-text">
+                each word is taken as one key. after click space you should search another word. <br />
+                ex: drama war... <br />
+                1st word - drama. 2nd word - war.
+            </div>
+        </div> */
