@@ -39,6 +39,7 @@ const MovieCard = ({ movie }) => {
 const SearchView = ({ keyword, searchResults, status}) => {
   const title = `You are searching for ${keyword}`;
   var indexArr = []
+  
   const resultHtml = searchResults.map((obj, i) => {
     indexArr.push(i)
     return <MovieCard movie={obj} key={i} />;
