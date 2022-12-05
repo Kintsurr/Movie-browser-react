@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react";
-
+import MovieCard from "./MovieCard";
 const ShowMovies =({genres, startYear, endYear, startRatings, endRatings}) =>{
     const [discover, setDiscover] = useState([]);
     useEffect(() => {
@@ -10,13 +10,19 @@ const ShowMovies =({genres, startYear, endYear, startRatings, endRatings}) =>{
           })
 
       })
+
+     const resultDiscover = discover.map((obj, i) =>{
+      return <MovieCard movie={obj} key={i} />;
+     })
 return(
     <>
-    <h2>{genres}</h2>
-    <h2>{startYear}</h2>
-    <h2>{endYear}</h2>
-    <h2>{startRatings}</h2>
-    <h2>{endRatings}</h2>
+     {resultDiscover && (
+          <div className="Container">
+            <div className="row"> 
+              {resultDiscover}  
+            </div>
+          </div>
+        )}
     </>
 )
 }
